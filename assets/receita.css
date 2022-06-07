@@ -1,0 +1,73 @@
+.box-receita{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.box-receita img{
+    max-width: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.content-receita h1{
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-style: 'Kanit';
+}
+
+.content-receita h2{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}    
+.content-receita p{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+    
+
+
+/*pc*/
+@media (min-width: 980px){
+    .box-receita img{
+        max-width: 25rem;
+        margin-right: 2rem;
+        
+    }
+
+    .box-receita{
+        width: 70%;
+        flex-direction: row;
+    }
+}
+
+.link-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 25px;
+    font-weight: 500;
+    border-color: rgb(111, 28, 136);
+    background: rgb(166, 81, 236);
+    margin-bottom: 2rem;
+    font-family: 'Barlow Condensed', 'sans-serif' !important;
+    font-weight: 800 !important;
+    cursor: pointer;
+}
+
+.link-botao :hover{
+    background-color: rgb(111, 28, 136);
+    
+}

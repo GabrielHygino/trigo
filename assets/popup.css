@@ -1,0 +1,150 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    overflow-x: auto;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 2s ease-in-out;
+    overflow-y: hidden;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    margin-top: 15px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+
+  .box-receitas .pag-receita{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .receita{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 15rem;
+    border-radius: 10px;
+    background: linear-gradient(34deg, rgba(255,178,128,1) 19%, rgba(255,138,155,1) 77%);
+    text-align: center;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+  }
+
+  .receita p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-img img{
+    max-height: 8rem;
+    margin-bottom: 1rem;
+    border-radius: 20%;
+    border: solid 4px;
+    opacity: 85%;
+    border-color: rgba(255,178,128,1);
+  }
+
+  .receita h2{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .receita .content-text img{
+    max-width: 1.7rem;
+  }
+
+  /*pc*/
+@media (min-width: 980px){
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+  }
+  .receita{
+    flex-direction: row;
+    
+  }
+  .content-img img{
+    max-height: 8rem;
+    
+    margin-left: 3rem;
+  }
+
+  .receita h2{
+    font-size: 2rem;
+    
+    margin: 0 0;
+  }
+
+  .receita p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .receita .content-text{
+    margin-bottom: 2rem;
+  }
+
+  .receita .content-text img{
+    max-width: 3.5rem;
+  }
+}
